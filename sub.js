@@ -8,7 +8,9 @@
  */
 
 // Your code :
-
+function sub(first,sec){
+  return first-sec;
+}
 //* Begin of tests
 const assert = require('assert')
 const rand = Math.random()

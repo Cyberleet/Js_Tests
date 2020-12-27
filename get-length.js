@@ -9,7 +9,10 @@
  */
 
 // Your code :
-
+function getLength(arr){
+  let len = arr.length
+  return len
+}
 //* Begin of tests
 const assert = require('assert')
 

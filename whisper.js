@@ -7,5 +7,11 @@
  * @next yell
  */
 
+
+ function whisper(str){
+   return str.toLowerCase()
+ }
 // You must write your own tests
-throw Error('No tests !')
+const assert = require('assert')
+
+assert.strictEqual(whisper('HelLO'), 'hello')

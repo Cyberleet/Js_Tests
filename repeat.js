@@ -9,6 +9,13 @@
  * @next sentence
  */
 
+function repeat(string, number) {
+  let repeatedStr =''
+  for(let i=0; i<number; i++){
+    repeatedStr+= string
+  }
+  return repeatedStr;
+}
 //* Begin of tests
 const assert = require('assert')
 

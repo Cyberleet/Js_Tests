@@ -11,7 +11,9 @@
  */
 
 // Your code :
-
+function multiply(num1,num2){
+  return
+}
 //* Begin of tests
 const assert = require('assert')
 

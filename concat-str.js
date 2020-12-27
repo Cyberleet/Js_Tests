@@ -9,6 +9,9 @@
 
 // Your code :
 
+function concatStr(arg1,arg2){
+  return arg1 + arg2;
+}
 //* Begin of tests
 const assert = require('assert')
 

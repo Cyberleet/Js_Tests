@@ -10,8 +10,28 @@
  */
 
 // Your code :
-
-//* Begin of tests
+function multiply(num1,num2){
+  let num = 0;
+  if(num1>0 && num2>0 ){
+    for(let i=0;i<num1;i++){
+      num+=num2;
+     }
+  }else if(num1>0 && num2<0){
+    for(let i=0;i<num1;i++){
+      num+=num2;
+     }
+  }else if(num1<0 && num2>0){
+    for(let i=0;i<num2;i++){
+      num+=num1;
+     }
+  }else if(num1<0 && num2<0){
+    for(let i=0;i>num2;i--){
+      num-=num1;
+     }
+  }
+  return num;
+}
+//* Begin of testsrequire
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')

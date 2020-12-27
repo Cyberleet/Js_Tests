@@ -6,6 +6,8 @@
  *
  * @next jaden-case
  */
-
+function capitalize(str){
+  return
+}
 // You must write your own tests
 throw Error('No tests !')

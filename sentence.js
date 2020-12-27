@@ -7,6 +7,16 @@
  * @next words
  */
 
+ function sentence(arr){
+   let str =''
+   arr.forEach(element => {
+     str+=element+ ' ';
+
+   });
+   str = str.substring(0, str.length - 1);
+   return str;
+
+ }
 
 //* Begin of tests
 const assert = require('assert')
