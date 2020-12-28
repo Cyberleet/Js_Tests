@@ -7,6 +7,17 @@
  * @next multiply
  */
 
+// Your code :
+
+function total(Numbers){
+    let Total=0
+    for (let i = 0; i < Numbers.length; i++) {
+        Total += Numbers[i];        
+    }
+    return Total
+}
+
+
 
 //* Begin of tests
 const assert = require('assert')

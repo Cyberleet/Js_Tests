@@ -10,6 +10,9 @@
 
 // Your code :
 
+  var escapeStr = "/\\\`\"\'";
+
+
 //* Begin of tests
 const assert = require('assert')
 

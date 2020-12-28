@@ -10,6 +10,21 @@
 
 // Your code :
 
+function getFirst(AorS){
+    var Firts_letter;
+    if (typeof AorS === 'string')
+    Firts_letter = AorS.charAt(0);
+    else
+    Firts_letter = AorS[0];
+    return Firts_letter;       
+}
+
+// short answer :)
+// function getFirst(AorS){
+//     return AorS[0] 
+// }
+
+
 //* Begin of tests
 const assert = require('assert')
 

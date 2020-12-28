@@ -10,6 +10,23 @@
  */
 
 // Your code :
+function multiply(Number1,Number2){
+    let i = Number2
+    let result = 0;
+    while(i != 0){
+        if (i < 0)
+        i++
+        else if (i > 0)
+        i--
+        result += Number1
+    }
+    if (Number2 < 0)
+    return 0-result
+    return result
+    
+}
+
+
 
 //* Begin of tests
 const assert = require('assert')

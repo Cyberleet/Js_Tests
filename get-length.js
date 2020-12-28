@@ -10,6 +10,11 @@
 
 // Your code :
 
+function getLength (AorS){
+   return AorS.length;
+
+}
+
 //* Begin of tests
 const assert = require('assert')
 

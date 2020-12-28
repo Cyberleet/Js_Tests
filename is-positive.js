@@ -7,6 +7,15 @@
  * @next sign
  */
 
+ // Your code :
+  function isPositive(Number){
+      if (Number > 0)
+      return true;
+      
+      return false;
+
+
+  }
 
 
 //* Begin of tests
