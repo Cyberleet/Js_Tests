@@ -9,6 +9,19 @@
  */
 
 // Your code :
+function getLast(AorS){
+    var Firts_letter;
+    if (typeof AorS === 'string')
+    Firts_letter = AorS.charAt(AorS.length-1);
+    else
+    Firts_letter = AorS[AorS.length-1];
+    return Firts_letter;       
+}
+
+//short answer :)
+// function getLast(AorS){
+//     return AorS[AorS.length-1] 
+// }
 
 //* Begin of tests
 const assert = require('assert')

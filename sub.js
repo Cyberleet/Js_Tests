@@ -9,6 +9,10 @@
 
 // Your code :
 
+function sub(Number1, Number2){
+    return Number1-Number2
+}
+
 //* Begin of tests
 const assert = require('assert')
 const rand = Math.random()

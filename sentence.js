@@ -7,6 +7,14 @@
  * @next words
  */
 
+ // Your code :
+ function sentence(array){
+    let result = array.join(' ')
+    return result
+
+    
+ }
+
 
 //* Begin of tests
 const assert = require('assert')

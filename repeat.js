@@ -9,6 +9,17 @@
  * @next sentence
  */
 
+ // Your code :
+ function repeat(Strg,Number){
+    let result = '';
+     for ( Number-1 ; Number >0 ; Number --){
+         result += Strg
+     }
+     return result
+ }
+
+
+
 //* Begin of tests
 const assert = require('assert')
 

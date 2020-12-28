@@ -12,6 +12,15 @@
 
 // Your code :
 
+function abs (Number){
+    if (Number < 0){
+      Number *= -1;}
+      
+    return Number;
+
+}
+  
+
 //* Begin of tests
 const assert = require('assert')
 
