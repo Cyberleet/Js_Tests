@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 /*
  * Create a constant variables named `escapeStr` that contains specials
@@ -9,14 +9,14 @@
  */
 
 // Your code :
-
+const escapeStr = `/ \` \\ "'`;
 //* Begin of tests
-const assert = require('assert')
+const assert = require("assert");
 
-assert.strictEqual(typeof escapeStr, 'string')
-assert.strictEqual(escapeStr.includes("'"), true)
-assert.strictEqual(escapeStr.includes('"'), true)
-assert.strictEqual(escapeStr.includes('`'), true)
-assert.strictEqual(escapeStr.includes('/'), true)
-assert.strictEqual(escapeStr.includes('\\'), true)
+assert.strictEqual(typeof escapeStr, "string");
+assert.strictEqual(escapeStr.includes("'"), true);
+assert.strictEqual(escapeStr.includes('"'), true);
+assert.strictEqual(escapeStr.includes("`"), true);
+assert.strictEqual(escapeStr.includes("/"), true);
+assert.strictEqual(escapeStr.includes("\\"), true);
 // End of tests */

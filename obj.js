@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 /*
  * Create an object `obj` that has a property for each primitive values
@@ -9,21 +9,25 @@
  */
 
 // Your code :
-
+const obj = {
+  str: "1337",
+  num: 42,
+  bool: false,
+};
 //* Begin of tests
-const assert = require('assert')
+const assert = require("assert");
 
-assert.strictEqual(typeof obj, 'object')
+assert.strictEqual(typeof obj, "object");
 
-assert.strictEqual(typeof obj.str, 'string')
-assert.strictEqual(obj.str, '1337')
+assert.strictEqual(typeof obj.str, "string");
+assert.strictEqual(obj.str, "1337");
 
-assert.strictEqual(typeof obj.num, 'number')
-assert.strictEqual(obj.num, 42)
+assert.strictEqual(typeof obj.num, "number");
+assert.strictEqual(obj.num, 42);
 
-assert.strictEqual(typeof obj.bool, 'boolean')
-assert.strictEqual(obj.bool, false)
+assert.strictEqual(typeof obj.bool, "boolean");
+assert.strictEqual(obj.bool, false);
 
-assert.strictEqual(typeof obj.undef, 'undefined')
-assert.strictEqual(obj.undef, undefined)
+assert.strictEqual(typeof obj.undef, "undefined");
+assert.strictEqual(obj.undef, undefined);
 // End of tests */

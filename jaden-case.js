@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 /*
  * Jaden Smith Case
@@ -9,6 +9,18 @@
  * @next total
  */
 
+const jadenCase = (x = "") => {
+  let result = "";
+  for (let i = 0; i < x.length; i++) {
+    if ([undefined, " "].includes(x[i - 1])) result += x[i].toUpperCase();
+    else result += x[i];
+  }
+  return result;
+};
 
 // You must write your own tests
-throw Error('No tests !')
+const assert = require("assert");
+
+assert.strictEqual(typeof jadenCase, "function");
+assert.strictEqual(jadenCase("num"), "Num");
+assert.strictEqual(jadenCase("bool vool"), "Bool Vool");

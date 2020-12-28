@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 /*
  * Create a function `id` that takes one argument and return it
@@ -8,13 +8,13 @@
  */
 
 // Your code :
-
+const id = (x) => x;
 //* Begin of tests
-const assert = require('assert')
+const assert = require("assert");
 
-assert.strictEqual(typeof id, 'function')
-assert.strictEqual(id.length, 1)
-assert.strictEqual(id(5), 5)
-assert.strictEqual(id('pouet'), 'pouet')
-assert.strictEqual(id(assert), assert)
+assert.strictEqual(typeof id, "function");
+assert.strictEqual(id.length, 1);
+assert.strictEqual(id(5), 5);
+assert.strictEqual(id("pouet"), "pouet");
+assert.strictEqual(id(assert), assert);
 // End of tests */

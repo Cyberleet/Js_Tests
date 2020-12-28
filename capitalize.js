@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 /*
  * Create a function `capitalize` takes a string
@@ -7,5 +7,12 @@
  * @next jaden-case
  */
 
+const capitalize = (x) => x.replace(/^[a-z]/, x[0].toUpperCase());
+
 // You must write your own tests
-throw Error('No tests !')
+const assert = require("assert");
+
+assert.strictEqual(typeof capitalize, "function");
+assert.strictEqual(capitalize("fgvhgvhgv"), "Fgvhgvhgv");
+assert.strictEqual(capitalize("10tacles"), "10tacles");
+assert.strictEqual(capitalize("Limerick"), "Limerick");
