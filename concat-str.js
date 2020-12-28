@@ -8,6 +8,7 @@
  */
 
 // Your code :
+const concatStr = (strA, strB) => strA + strB
 
 //* Begin of tests
 const assert = require('assert')

@@ -9,7 +9,7 @@
  */
 
 // Your code :
-
+const getFirst = arr => arr[0]
 //* Begin of tests
 const assert = require('assert')
 

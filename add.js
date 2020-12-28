@@ -8,6 +8,9 @@
  */
 
 // Your code :
+const add = (numA, numB) => {
+    return numA + numB;
+};
 
 //* Begin of tests
 const assert = require('assert')
