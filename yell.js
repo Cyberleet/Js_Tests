@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 /*
  * Create a function `yell` that takes a string
@@ -7,5 +7,10 @@
  * @next cut
  */
 
+const yell = (x) => x.toUpperCase();
 // You must write your own tests
-throw Error('No tests !')
+const assert = require("assert");
+
+assert.strictEqual(typeof yell, "function");
+assert.strictEqual(yell.length, 1);
+assert.deepStrictEqual(yell("GFFhbhGV"), "GFFHBHGV");

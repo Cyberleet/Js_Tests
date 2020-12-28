@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 /*
  * Create the function `min` that takes 2 number arguments
@@ -11,16 +11,16 @@
  */
 
 // Your code :
-
+const min = (x, y) => (x < y ? x : y);
 //* Begin of tests
-const assert = require('assert')
+const assert = require("assert");
 
-assert.strictEqual(typeof min, 'function')
-assert.strictEqual(min.length, 2)
-assert.strictEqual(min.toString().includes('Math.min'), false)
-assert.notStrictEqual(min, Math.min)
-assert.strictEqual(min(0, -2), -2)
-assert.strictEqual(min(-1, 10), -1)
-assert.strictEqual(min(-13.2, -222), -222)
-assert.strictEqual(min(132, 133), 132)
+assert.strictEqual(typeof min, "function");
+assert.strictEqual(min.length, 2);
+assert.strictEqual(min.toString().includes("Math.min"), false);
+assert.notStrictEqual(min, Math.min);
+assert.strictEqual(min(0, -2), -2);
+assert.strictEqual(min(-1, 10), -1);
+assert.strictEqual(min(-13.2, -222), -222);
+assert.strictEqual(min(132, 133), 132);
 // End of tests */
