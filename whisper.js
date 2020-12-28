@@ -7,5 +7,13 @@
  * @next yell
  */
 
+const whisper = (str) => {
+    return str.toLowerCase();
+}
 // You must write your own tests
-throw Error('No tests !')
+
+const assert = require('assert');
+assert.strictEqual(typeof whisper, 'function', 'whisper must be a function');
+assert.strictEqual(whisper('Lorem'), 'lorem');
+assert.strictEqual(whisper('Emmanuel'), 'emmanuel');
+// throw Error('No tests !')

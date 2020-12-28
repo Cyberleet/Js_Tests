@@ -8,8 +8,12 @@
  */
 
 
+const words = str => {
+    return str.split(' ')
+}
 //* Begin of tests
 const assert = require('assert')
+
 
 assert.strictEqual(typeof words, 'function')
 assert.strictEqual(words.length, 1)

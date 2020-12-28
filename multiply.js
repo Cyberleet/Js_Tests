@@ -10,6 +10,28 @@
  */
 
 // Your code :
+function multiply(numA, numB) {
+    let multiple = 0;
+    if (numA > 0 && numB > 0) {
+        for (let i = 0; i < numA; i++) {
+            multiple += numB;
+        }
+    } else if (numA > 0 && numB < 0) {
+        for (let i = 0; i < numA; i++) {
+            multiple += numB;
+        }
+    } else if (numA < 0 && numB > 0) {
+        for (let i = 0; i < numB; i++) {
+            multiple += numA;
+        }
+    } else if (numA < 0 && numB < 0) {
+        for (let i = 0; i > numB; i--) {
+            multiple -= numA;
+        }
+    }
+    return multiple;
+}
+
 
 //* Begin of tests
 const assert = require('assert')

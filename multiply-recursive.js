@@ -12,6 +12,19 @@
 
 // Your code :
 
+const multiply = (numA, numB) => {
+    if (numB === 0 || numA === 0) return 0;
+    else {
+        if (Math.sign(numA) === Math.sign(numB)) {
+            return Math.abs(numA) + multiply(Math.abs(numA), Math.abs(numB) - 1);
+        } else {
+            let min = Math.min(numA, numB);
+            let max = Math.max(numA, numB);
+            return min + multiply(min, max - 1);
+        }
+    }
+};
+
 //* Begin of tests
 const assert = require('assert')
 

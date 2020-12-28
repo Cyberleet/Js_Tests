@@ -9,6 +9,14 @@
  * @next sentence
  */
 
+const repeat = (str, num) => {
+    let repeatedStr = ''
+    while (num > 0) {
+        repeatedStr += str;
+        num--
+    }
+    return repeatedStr;
+}
 //* Begin of tests
 const assert = require('assert')
 

@@ -8,6 +8,10 @@
  */
 
 
+const sentence = arr => {
+    let arrSentence = arr.slice(0, arr.length -1).join(' ') + ' ' + arr.slice(-1);
+    return arrSentence
+} 
 //* Begin of tests
 const assert = require('assert')
 
