@@ -7,5 +7,22 @@
  * @next yell
  */
 
-// You must write your own tests
-throw Error('No tests !')
+function whisper(str){
+	return str.toLowerCase()
+
+	// var result = ''
+	// for (var i = 0; i < str.length; i++){
+	// 	result = result.concat(str[i].toLowerCase())
+	// }
+	// return result
+}
+
+//* Begin of tests
+
+const assert = require('assert')
+
+assert.strictEqual(typeof whisper, 'function')
+assert.strictEqual(whisper.length, 1)
+assert.strictEqual(whisper("BAMBOO"),"bamboo")
+
+// End of tests *//

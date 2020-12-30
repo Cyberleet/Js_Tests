@@ -7,5 +7,22 @@
  * @next cut
  */
 
-// You must write your own tests
-throw Error('No tests !')
+ function yell(str){
+ 	return str.toUpperCase()
+
+ 	// var result = ''
+ 	// for (var i = 0; i < str.length; i++){
+ 	// 	result = result.concat(str[i].toUpperCase())
+ 	// }
+ 	// return result
+ }
+
+//* Begin of tests
+
+const assert = require('assert')
+
+assert.strictEqual(typeof yell, 'function')
+assert.strictEqual(yell.length, 1)
+assert.strictEqual(yell("bamboo"),"BAMBOO")
+
+// End of tests *//

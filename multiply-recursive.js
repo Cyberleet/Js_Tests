@@ -12,6 +12,22 @@
 
 // Your code :
 
+function multiply(num1, num2){
+	if (!num1 || !num2)
+		return 0
+
+	var max = Math.max(num1,num2)
+	var min = Math.min(num1,num2)
+
+	// stack limit reached
+	return max + multiply(max,min-1)
+
+	// known possible-methods that does not work:
+	// - by using <<, failed due to division
+	// - by divide and conquer, failed due to division
+	
+}
+
 //* Begin of tests
 const assert = require('assert')
 
