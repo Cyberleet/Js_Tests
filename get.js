@@ -18,6 +18,10 @@ const sourceObject = {
 
 // Your code :
 
+function get(prop){
+	return sourceObject[prop]
+}
+
 //* Begin of tests
 const assert = require('assert')
 

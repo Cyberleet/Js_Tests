@@ -9,6 +9,17 @@
  * @next sentence
  */
 
+function repeat(str,num){
+	if (!num)
+		return ''
+
+	var result = ''
+	for (var i = 0; i < num; i++){
+		result = result.concat(str)
+	}
+	return result
+}
+
 //* Begin of tests
 const assert = require('assert')
 

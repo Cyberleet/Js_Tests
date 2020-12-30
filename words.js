@@ -7,6 +7,25 @@
  * @next whisper
  */
 
+function words(str){
+	// return str.split(' ')
+
+	var result = []
+	var temp = ''
+	
+	for (var i = 0; i < str.length; i++){
+		if (str[i] === ' '){
+			result.push(temp)
+			temp = ''
+		}
+		else
+			temp = temp.concat(str[i])
+	}
+	result.push(temp)
+
+	return result
+}
+
 
 //* Begin of tests
 const assert = require('assert')

@@ -13,5 +13,30 @@
  * @next capitalize
  */
 
-// You must write your own tests
-throw Error('No tests !')
+function keepFirst(str){
+	return str.slice(0,2)
+}
+
+function keepLast(str){
+	return str.slice(-2)
+}
+
+function keepFirstLast(str){
+	return str.slice(2,4)
+}
+
+//* Begin of tests
+
+const assert = require('assert')
+
+assert.strictEqual(typeof keepFirst, 'function')
+assert.strictEqual(keepFirst.length, 1)
+assert.strictEqual(typeof keepLast, 'function')
+assert.strictEqual(keepLast.length, 1)
+assert.strictEqual(typeof keepFirstLast, 'function')
+assert.strictEqual(keepFirstLast.length, 1)
+assert.strictEqual(keepFirst("bamboo"),"ba")
+assert.strictEqual(keepLast("bamboo"),"oo")
+assert.strictEqual(keepFirstLast("bamboo"),"mb")
+
+// End of tests *//

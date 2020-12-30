@@ -7,6 +7,17 @@
  * @next words
  */
 
+function sentence(arr){
+ 	// return arr.join(' ')
+ 	
+ 	var result = ''
+ 	arr.forEach(e=>{
+ 		result = result.concat(e,' ')
+ 	})
+ 	result = result.slice(0,-1)
+ 	return result
+}
+
 
 //* Begin of tests
 const assert = require('assert')
