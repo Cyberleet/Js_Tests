@@ -9,7 +9,17 @@
  */
 
 // Your code :
-
+function getFirst(a){
+    'use strict'
+    let result = "not a string or array"
+    if(typeof a === 'string'){
+        result = a.charAt(0) 
+    }
+    else if(Array.isArray(a)){
+        result = a[0]
+    }
+    return result
+}
 //* Begin of tests
 const assert = require('assert')
 

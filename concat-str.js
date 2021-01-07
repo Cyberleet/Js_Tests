@@ -8,7 +8,14 @@
  */
 
 // Your code :
-
+function concatStr(a, b){
+    if(typeof a !== 'string'){
+        a = a.toString()
+    } else if (typeof b !== 'string'){
+        b = b.toString()
+    }  
+    return a + b
+}
 //* Begin of tests
 const assert = require('assert')
 

@@ -6,7 +6,14 @@
  *
  * @next multiply
  */
-
+function total(arrn){
+    'use-strict'
+    let sum = 0
+    for(const n of arrn){
+        sum += n
+    }
+    return sum
+}
 
 //* Begin of tests
 const assert = require('assert')

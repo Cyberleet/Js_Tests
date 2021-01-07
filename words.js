@@ -6,6 +6,7 @@
  *
  * @next whisper
  */
+const words = s => s.split(' ')
 
 
 //* Begin of tests

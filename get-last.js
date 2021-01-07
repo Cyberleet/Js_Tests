@@ -9,7 +9,17 @@
  */
 
 // Your code :
-
+function getLast(a){
+    'use strict'
+    let result = "not a string or array"
+    if(typeof a === 'string'){
+        result = a.charAt(a.length - 1) 
+    }
+    else if(Array.isArray(a)){
+        result = a[a.length - 1]
+    }
+    return result
+}
 //* Begin of tests
 const assert = require('assert')
 
