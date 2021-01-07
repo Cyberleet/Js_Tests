@@ -9,6 +9,13 @@
  * @next sentence
  */
 
+function repeat(str, num) {
+    if(num === 0) {
+        return '';
+    }
+    return str + repeat(str, num - 1);
+}
+
 //* Begin of tests
 const assert = require('assert')
 

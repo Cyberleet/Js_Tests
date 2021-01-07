@@ -11,6 +11,21 @@
 
 // Your code :
 
+function multiply(num1, num2) {
+    let x = 0;
+    if(num2 > 0) {
+        for(let i = num2; i > 0; i--) {
+            x += num1;
+        }
+    } else {
+        for(let i = num2; i < 0; i++) {
+            x -= num1;
+        }
+    }
+    
+    return x;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

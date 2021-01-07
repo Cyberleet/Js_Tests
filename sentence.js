@@ -7,6 +7,14 @@
  * @next words
  */
 
+function sentence(arr) {
+    let str = '';
+    for(let i = 0; i < arr.length - 1; i++) { // get until the second last letter
+        str += arr[i] + ' ';
+    }
+    str += arr[arr.length - 1] // add the last letter without space
+    return str;
+}
 
 //* Begin of tests
 const assert = require('assert')
