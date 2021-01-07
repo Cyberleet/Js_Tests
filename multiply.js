@@ -10,7 +10,38 @@
  */
 
 // Your code :
-
+const multiply = (a, b) => {
+    let result
+    if(a === 0 || b === 0){
+        return 0
+    }
+    else if((a>0 && b>0) || (a<0 && b>0)){
+        result = a
+        while(b > 1){
+            result += a
+            b--
+        }
+    }
+    else if((a>0 && b<0)){
+        result = b 
+        while(a > 1){
+            result += b
+            a--
+        }
+    }
+    else if((a<0 && b<0)){
+        let posA = Math.abs(a)
+        let posB = Math.abs(b)
+        result = posA
+        while(posB > 1){
+            result += posA
+            posB--
+        }
+    }
+    return result
+    
+    
+}
 //* Begin of tests
 const assert = require('assert')
 

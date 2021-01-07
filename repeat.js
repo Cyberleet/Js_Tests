@@ -9,6 +9,19 @@
  * @next sentence
  */
 
+function repeat(s, n){
+    'use-strict'
+    if(n === 0){
+        return ''
+    }
+    const repeat = s
+    while(n>1){
+        s += repeat
+        n--
+    }
+    return s
+}
+
 //* Begin of tests
 const assert = require('assert')
 

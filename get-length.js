@@ -9,7 +9,14 @@
  */
 
 // Your code :
-
+function getLength(a){
+    'use strict'
+    let result = "not a string or array"
+    if(typeof a === 'string' || Array.isArray(a)){
+        result = a.length
+    }
+    return result
+}
 //* Begin of tests
 const assert = require('assert')
 

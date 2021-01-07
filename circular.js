@@ -9,6 +9,12 @@
  */
 
 // Your code :
+let circular
+circular = {
+    get circular() {
+        return this.circular;
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
