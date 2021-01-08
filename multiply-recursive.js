@@ -7,11 +7,21 @@
  * and no loops, do it using recursion
  *
  * @notions Primitive and Operators, Functions, Recursion
- * @next
+ * @next sub
  */
 
 // Your code :
+function multiply(number1,number2){
+    if (number2 > 0) {
+        return number1 + multiply( number1, number2  - 1);
+    }
+    else if (number2  < 0) {
+        return -number1 + multiply( number1, number2 + 1);
+    }
 
+    return 0;
+
+}
 //* Begin of tests
 const assert = require('assert')
 

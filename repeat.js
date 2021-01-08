@@ -6,8 +6,16 @@
  * Like the method https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
  * Of course you may not use the method directly
  *
- * @next sentence
+ * @next sentence(
  */
+
+ function repeat(str , num ){
+        let temp = '';
+        for(let i = 0 ; i<num ; i++){
+            temp += str; 
+        }
+        return temp ; 
+ }
 
 //* Begin of tests
 const assert = require('assert')

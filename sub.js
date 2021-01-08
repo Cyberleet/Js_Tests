@@ -4,10 +4,13 @@
  * Create a function `sub` that takes 2 arguments and substract them
  *
  * @notions Primitive and Operators, Functions
- * @next abs
+ * @next 
  */
 
 // Your code :
+function sub(num1,num2){
+    return num1-num2 ; 
+}
 
 //* Begin of tests
 const assert = require('assert')

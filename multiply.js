@@ -10,7 +10,41 @@
  */
 
 // Your code :
+function abs(number){
+   var str =  number.toString();
+   if(str[0]==='-'){
+   str = str.substr(1,str.length)
+   }
+   return parseInt(str);
+}
+function multiply(number1,number2){
+        var temp = 0;
+    if(number1==0 || number2==0){
+            return 0 ; 
+    }else if(number1<0 || number2<0){
+        if(number1<0 && number2<0){
+            number1 = abs(number1);
+            number2 = abs(number2);
+            for(let i = 0 ; i<number2;i++){
+            temp+=number1;
+            }
+         }else {
+            number1 = abs(number1);
+            number2 = abs(number2);
+            for(let i = 0 ; i<number2;i++){
+            temp+=number1;
+            } temp = -temp ;           
+     }
 
+    }else{
+        for(let i = 0 ; i<number2;i++){
+            temp+=number1;
+        }
+    }
+    return temp ; 
+    
+}
+console.log(multiply(21.2,42.2))
 //* Begin of tests
 const assert = require('assert')
 

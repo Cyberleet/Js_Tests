@@ -7,6 +7,10 @@
  * @next words
  */
 
+function sentence(ar){
+    return ar.join(' '); 
+   
+}
 
 //* Begin of tests
 const assert = require('assert')
