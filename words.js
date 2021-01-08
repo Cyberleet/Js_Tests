@@ -6,6 +6,9 @@
  *
  * @next whisper
  */
+function words(string){
+     return string.split(' ');
+}
 
 
 //* Begin of tests

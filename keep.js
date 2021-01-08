@@ -12,6 +12,24 @@
  *
  * @next capitalize
  */
+function keepFirst(string){
+    return string.substr(0,2);
+}
+function keepLast(string){
+    return string.substr(-2,2);
+}
+function keepFirstLast(string){
+    return string.substr(3,2);
+}
 
-// You must write your own tests
-throw Error('No tests !')
+const assert = require('assert')
+
+assert.strictEqual(typeof keepFirstLast, 'function');
+assert.strictEqual(typeof keepFirst, 'function');
+assert.strictEqual(typeof keepLast, 'function');
+assert.strictEqual(keepFirstLast.length, 1);
+assert.strictEqual(keepFirst.length, 1);
+assert.strictEqual(keepLast.length, 1);
+assert.strictEqual(keepFirstLast("How are you ?"), " a");
+assert.strictEqual(keepFirst("How are you ?"), "Ho");
+assert.strictEqual(keepLast("How are you ?"), " ?");

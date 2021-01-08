@@ -13,6 +13,15 @@
 
 // Your code :
 
+function sign(number){
+    if(number>0){
+        return 1;
+    }
+    if(number<0){
+        return -1;
+    }
+    return 0 ;
+}
 //* Begin of tests
 const assert = require('assert')
 
