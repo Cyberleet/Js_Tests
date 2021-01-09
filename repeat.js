@@ -8,6 +8,16 @@
  *
  * @next sentence
  */
+function repeat(str, num) {
+    var accumulatedStr = "";
+  
+    while (num > 0) {
+      accumulatedStr += str;
+      num--;
+    }
+  
+    return accumulatedStr;
+  }
 
 //* Begin of tests
 const assert = require('assert')

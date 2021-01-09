@@ -9,6 +9,8 @@
  */
 
 // Your code :
+var escapeStr = "Hello world, \" welcome\' to\\ the\/ universe.";
+
 
 //* Begin of tests
 const assert = require('assert')
