@@ -6,6 +6,19 @@
  *
  * @next jaden-case
  */
+function capitalize(s) { 
+          
+          
+    return s[0].toUpperCase() +  
+      s.slice(1); 
+       
+  } 
+
 
 // You must write your own tests
-throw Error('No tests !')
+const assert = require('assert')
+
+assert.strictEqual(typeof capitalize, 'function')
+assert.strictEqual(capitalize("hello"), "Hello")
+assert.strictEqual(capitalize("yes"), "Yes")
+assert.strictEqual(capitalize("no"), "No")

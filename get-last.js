@@ -9,6 +9,9 @@
  */
 
 // Your code :
+function getLast(strOrarr){
+    return strOrarr[strOrarr.length-1]
+}
 
 //* Begin of tests
 const assert = require('assert')

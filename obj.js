@@ -9,6 +9,12 @@
  */
 
 // Your code :
+const obj ={
+    str:"",
+    num:1,
+    bool:true,
+    undef:undefined
+}
 
 //* Begin of tests
 const assert = require('assert')

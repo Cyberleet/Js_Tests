@@ -6,7 +6,11 @@
  *
  * @next multiply
  */
-
+function total (arrNum) {
+    return arrNum.reduce((total,num)=>{
+        return total+num
+    })
+}
 
 //* Begin of tests
 const assert = require('assert')

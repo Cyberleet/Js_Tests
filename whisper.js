@@ -6,6 +6,13 @@
  *
  * @next yell
  */
-
+function whisper(str){
+    return str.toLowerCase();
+}
 // You must write your own tests
-throw Error('No tests !')
+const assert = require('assert')
+
+assert.strictEqual(typeof whisper, 'function')
+assert.deepStrictEqual(whisper('HELLO WORLD'), "hello word")
+assert.deepStrictEqual(whisper('CYBERLEET'), "cyberleet")
+assert.deepStrictEqual(whisper('MEHDI'), "mehdi")

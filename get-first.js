@@ -9,6 +9,9 @@
  */
 
 // Your code :
+function getFirst (strOrarr){
+    return strOrarr[0]
+     }
 
 //* Begin of tests
 const assert = require('assert')

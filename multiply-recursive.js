@@ -11,6 +11,12 @@
  */
 
 // Your code :
+function multiply(a, b) {
+    if (!a) { return 0; }
+    return a & 1
+        ? b + multiply(a >> 1, b << 1)
+        : multiply(a >> 1, b << 1);
+}
 
 //* Begin of tests
 const assert = require('assert')
