@@ -7,5 +7,11 @@
  * @next jaden-case
  */
 
+function capitalize(a)
+{
+	a.toLowerCase();
+	a[0].toUpperCase(); 
+}
+
 // You must write your own tests
 throw Error('No tests !')

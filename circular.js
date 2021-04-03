@@ -9,8 +9,25 @@
  */
 
 // Your code :
+class Circular {
+    constructor() {
+        this.circular = null;
+    }
+
+    setCircular(circular) {
+        this.circular = circular;
+    }
+
+    getCircular() {
+        return this.circular;
+    }
+}
+
+let circular = new Circular();
+circular.setCircular(circular);
 
 //* Begin of tests
+
 const assert = require('assert')
 
 assert.strictEqual(typeof circular, 'object')

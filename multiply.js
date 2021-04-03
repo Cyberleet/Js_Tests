@@ -11,6 +11,26 @@
 
 // Your code :
 
+function multiply(a, b)
+{
+	var ret = 0;
+	var re = 1;
+
+	if (b < 0)
+	{
+		while (b++ < 0)
+		{
+			ret = ret - a;
+		}		
+	}
+	else
+		while (b-- > 0)
+		{
+			ret = ret + a;
+		}
+	return ret;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

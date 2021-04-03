@@ -9,11 +9,16 @@
  */
 
 // Provided code :
+
 const sourceObject = {
   num: 42,
   bool: true,
   str: 'some text',
   log: console.log,
+}
+
+let get = (key) => {
+  return sourceObject[key];
 }
 
 // Your code :

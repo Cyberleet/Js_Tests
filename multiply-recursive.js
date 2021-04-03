@@ -12,6 +12,27 @@
 
 // Your code :
 
+function multiply_rec(a, b)
+{
+	if (b < 1)
+		return 0;
+	return a + multiply_rec(a, b - 1);
+}
+
+function multiply_recn(a, b)
+{
+	//if (b > -1)
+	//	return 0;
+	return a - multiply_rec(a, -b + 1);
+}
+
+function multiply(a, b)
+{
+	if (b < 0)
+		return multiply_recn(a, b);
+	return multiply_rec(a, b);
+}
+
 //* Begin of tests
 const assert = require('assert')
 

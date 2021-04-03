@@ -7,6 +7,17 @@
  * @next multiply
  */
 
+function total(a)
+{
+	var total = 0;
+	var i = 0;
+	while (i < a.length)
+	{
+		total = total + a[i];
+		i++;
+	}
+	return total;
+}
 
 //* Begin of tests
 const assert = require('assert')

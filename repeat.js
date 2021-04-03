@@ -9,6 +9,15 @@
  * @next sentence
  */
 
+function repeat(a, b){
+    var s = "";
+    while (b--)
+    {
+        s+=a;
+    }
+    return s;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

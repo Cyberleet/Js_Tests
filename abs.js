@@ -12,6 +12,18 @@
 
 // Your code :
 
+function abs(p1) {
+	if (p1 < 0)
+	{
+		return -1 * p1;
+	}
+	else if (p1 >= 0)
+	{
+		return (p1);
+	}
+	return NaN;
+  }
+
 //* Begin of tests
 const assert = require('assert')
 
