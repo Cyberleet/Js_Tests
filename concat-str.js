@@ -7,6 +7,11 @@
  * @next get
  */
 
+function concatStr(a, b)
+{
+	return a + b;
+}
+
 // Your code :
 
 //* Begin of tests

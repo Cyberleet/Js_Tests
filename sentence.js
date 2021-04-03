@@ -7,6 +7,18 @@
  * @next words
  */
 
+function sentence(b)
+{
+	var i = 0;
+	var str = "";
+	while (i < b.length - 1)
+	{
+		str = str + b[i] + " ";
+		i++;
+	}
+
+	return str + b[b.length - 1];
+}
 
 //* Begin of tests
 const assert = require('assert')

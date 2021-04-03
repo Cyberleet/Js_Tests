@@ -7,5 +7,6 @@
  * @next yell
  */
 
+
 // You must write your own tests
 throw Error('No tests !')
